@@ -1,9 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>{{ page.title }}</title>
-	</head>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection" />
+	<script src="scripts/jquery.js"></script>
+	<script>
+		// footer:
+		$(function () {
+			$('.x-footer').append('<hr><div style="text-align:center"><p>友情链接: <a href="http://www.shi-ci.com" target="_blank">中华诗词</a></p></div>');
+		});
+	</script>
+</head>
 	<body>
 
 　　　　{{ content }}
